@@ -4,6 +4,9 @@ export const isEmpty = (stringArrayOrObject) => {
   if (type === 'string') {
     return stringArrayOrObject === ''
   }
+    else if (type === []) {
+      return stringArrayOrObject === ''
+  }
 
   return false
 }
